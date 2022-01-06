@@ -1,6 +1,6 @@
 if game.PlaceId == 155615604 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Prison Life", "Ocean")
+    local Window = Library.CreateLib("Prison Life", "BloodTheme")
  
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -72,7 +72,7 @@ elseif game.PlaceId == 3956818381 then
         end
     end)
  
-    MainSection:NewToggle("Auto Sell", "Makes your player autosell", function(v)
+    MainSection:NewToggle("Auto Sell", "Makes you autosell", function(v)
         getgenv().autosell = v
         while true do
             if getgenv().autoswing == false then return end
